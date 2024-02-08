@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     logger = Log4j(spark)
 
-    logger.warn("Created Spark Session")
+    logger.info("Created Spark Session")
 
     orders_df = DataReader.read_orders(spark,job_run_env)
 
