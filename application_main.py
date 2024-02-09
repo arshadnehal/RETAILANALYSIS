@@ -5,11 +5,7 @@ from lib.logger import Log4j
 
 if __name__ == '__main__':
 
-    if len(sys.argv) < 2:
-        print("Please specify the environment")
-        sys.exit(-1)
-
-    job_run_env = sys.argv[1]
+    job_run_env = Utils.check_input_environment(sys.argv)
 
     print("Creating Spark Session")
 
